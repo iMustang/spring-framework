@@ -6,10 +6,7 @@ import org.springframework.util.StringUtils;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URI;
-import java.net.URL;
-import java.net.URLConnection;
+import java.net.*;
 
 /**
  * UrlResource
@@ -41,7 +38,11 @@ public class UrlResource extends AbstractFileResolvingResource {
 	}
 
 	public URL getCleanedUrl(URL originalUrl, String originalPath) {
-		return new URL(StringUtils.cleanPath(originalPath));
+		try {
+			return new URL(StringUtils.cleanPath(originalPath));
+		} catch (MalformedURLException e) {
+			return originalUrl;
+		}
 	}
 
 }

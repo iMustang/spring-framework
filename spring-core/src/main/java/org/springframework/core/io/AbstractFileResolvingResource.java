@@ -96,4 +96,10 @@ public abstract class AbstractFileResolvingResource extends AbstractResource {
 	@Override
 	public InputStream getInputStream() throws IOException {
 	}
+
+	private static class VfsResourceDelegate {
+		public static Resource getResource(URL url) throws IOException {
+			return new VfsResource(VfsUtils.getRoot(url));
+		}
+	}
 }

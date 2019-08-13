@@ -1,9 +1,8 @@
 package org.springframework.util;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.StringTokenizer;
+import com.sun.webkit.dom.HTMLCollectionImpl;
+
+import java.util.*;
 
 /**
  * StringUtils
@@ -109,6 +108,25 @@ public abstract class StringUtils {
 			pathElements.add(0, TOP_PATH);
 		}
 		return prefix + collectionToDelimitedString(pathElements, FOLDER_SEPARATOR);
+	}
+
+	public static String collectionToDelimitedString(Collection<?> coll, String delim) {
+		return collectionToDelimitedString(coll, delim, "", "");
+	}
+
+	public static String collectionToDelimitedString(Collection<?> coll, String delim, String prefix, String suffix) {
+		if (CollectionUtils.isEmpty(coll)) {
+			return "";
+		}
+		StringBuilder sb = new StringBuilder();
+		Iterator<?> it = coll.iterator();
+		while (it.hasNext()) {
+			sb.append(prefix).append(it.next()).append(suffix);
+			if (it.hasNext()) {
+				sb.append(delim);
+			}
+		}
+		return sb.toString();
 	}
 
 	public static String[] delimitedListToStringArray(String str, String delimiter) {
