@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eda7b3cf-f9fd-4c39-8e42-746c77e56fee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-beans/spring-beans.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-core/spring-core.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +91,8 @@
       <updated>1565670664149</updated>
       <workItem from="1565670665886" duration="14728000" />
       <workItem from="1565689408833" duration="6810000" />
-      <workItem from="1575178427516" duration="72000" />
+      <workItem from="1575178427516" duration="108000" />
+      <workItem from="1575178553324" duration="10000" />
     </task>
     <servers />
   </component>
@@ -106,7 +104,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
